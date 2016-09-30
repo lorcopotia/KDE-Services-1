@@ -15,15 +15,15 @@ PREFIXdeskdir=$(RPM_BUILD_ROOT)/usr/share/desktop-directories
 PREFIXdoc=$(RPM_BUILD_ROOT)/usr/share/doc/kde-services
 
 install:
-	mkdir -p $(PREFIXmenu5)
-	mkdir -p $(PREFIXservicetypes5)
-	mkdir -p $(PREFIXmenu)
-	mkdir -p $(PREFIXapp)
-	mkdir -p $(PREFIXSVGicons)
-	mkdir -p $(PREFIXmime)
-	mkdir -p $(PREFIXappmerge)
-	mkdir -p $(PREFIXdeskdir)
-	mkdir -p $(PREFIXdoc)
+	sudo mkdir -p $(PREFIXmenu5)
+	sudo mkdir -p $(PREFIXservicetypes5)
+	sudo mkdir -p $(PREFIXmenu)
+	sudo mkdir -p $(PREFIXapp)
+	sudo mkdir -p $(PREFIXSVGicons)
+	sudo mkdir -p $(PREFIXmime)
+	sudo mkdir -p $(PREFIXappmerge)
+	sudo mkdir -p $(PREFIXdeskdir)
+	sudo mkdir -p $(PREFIXdoc)
 	
 	cp ServiceMenus/* $(PREFIXmenu5)
 	cp servicetypes/* $(PREFIXservicetypes5)
